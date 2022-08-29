@@ -1,0 +1,96 @@
+body {
+  width: 100%;
+}
+.inner {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  // display: flex;
+  // background-color: aqua;
+}
+
+header {
+  .inner {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cgv-logo {
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 53px;
+
+    img {
+      width: 117px;
+      height: 53px;
+    }
+
+    .cultureplex {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .member-info {
+    position: absolute;
+    right: 0;
+
+    ul {
+      display: flex;
+      height: 53px;
+
+      li {
+        padding-left: 35px;
+        font-size: 10px;
+        .login-menu {
+          width: 36px;
+          height: 36px;
+        }
+        &:nth-child(1){
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .cgv-menu-bar{
+    border-top: 1px solid #666;
+    border-bottom: 2px solid red;
+    text-align: center;
+    .inner {
+      height: 53px;
+    }
+    .cgv-menu {
+      display: flex;
+      li {
+        cursor: pointer;
+        padding: 0 10px;
+        font-weight: bold;
+        &:nth-child(3){
+          color: red;
+        }
+      }
+    }
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8px 0 8px;
+      border-left: 2px solid #666;
+      border-right: 2px solid #666;
+      height: 25px;
+      position: absolute;
+      right: 10px;
+      input {
+        width: 150px;
+        margin-right:5px;
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+}
