@@ -12,10 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.54.5"
+    "sass": "^1.54.5",
+    "typescript": "^4.8.2"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "typescript": "^4.8.2"
+    "lodash": "^4.17.21"
   }
 }

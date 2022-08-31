@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./scss/main.scss" />
+  <script defer src="./ts/main.ts"></script>
 </head>
 
 <body>
@@ -51,22 +53,22 @@
     <div class="cgv-menu-bar">
       <div class="inner">
         <ul class="cgv-menu">
-          <li>
+          <li class="item">
             <h1>영화</h1>
           </li>
-          <li>
+          <li class="item">
             <h1>극장</h1>
           </li>
-          <li>
+          <li class="item">
             <h1>예매</h1>
           </li>
-          <li>
+          <li class="item">
             <h1>스토어</h1>
           </li>
-          <li>
+          <li class="item">
             <h1>이벤트</h1>
           </li>
-          <li>
+          <li class="item">
             <h1>혜택</h1>
           </li>
         </ul>
@@ -76,10 +78,105 @@
         </div>
       </div>
     </div>
-  </header>
 
+    <div class="menu-hidden">
+      <div class="inner">
+        <ul class="menu">
+          <li>
+            <h1>영화</h1>
+          </li>
+          <li><a href="javascript:void(0)">무비차트</a></li>
+          <li><a href="javascript:void(0)">아트하우스</a></li>
+          <li><a href="javascript:void(0)">ICECON</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <h1>극장</h1>
+          </li>
+          <li><a href="javascript:void(0)">무비차트</a></li>
+          <li><a href="javascript:void(0)">아트하우스</a></li>
+          <li><a href="javascript:void(0)">ICECON</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <h1>예매</h1>
+          </li>
+          <li><a href="javascript:void(0)">빠른예매</a></li>
+          <li><a href="javascript:void(0)">상영스케줄</a></li>
+          <li><a href="javascript:void(0)">English Ticketing</a></li>
+          <li><a href="javascript:void(0)">English Schedule</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <h1>스토어</h1>
+          </li>
+          <li><a href="javascript:void(0)">영화관람권</a></li>
+          <li><a href="javascript:void(0)">기프트카드</a></li>
+          <li><a href="javascript:void(0)">콤보</a></li>
+          <li><a href="javascript:void(0)">팝콘</a></li>
+          <li><a href="javascript:void(0)">음료</a></li>
+          <li><a href="javascript:void(0)">스낵</a></li>
+          <li><a href="javascript:void(0)">플레이존</a></li>
+          <li><a href="javascript:void(0)">씨네샵></a></li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <h1>이벤트</h1>
+          </li>
+          <li><a href="javascript:void(0)">SPECIAL</a></li>
+          <li><a href="javascript:void(0)">영화/예매</a></li>
+          <li><a href="javascript:void(0)">맴버십/CLUB</a></li>
+          <li><a href="javascript:void(0)">CGV 극장별</a></li>
+          <li><a href="javascript:void(0)">제휴할인</a></li>
+          <li><a href="javascript:void(0)">당첨자 발표</a></li>
+          <li><a href="javascript:void(0)">종료된 이벤트</a></li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <h1>혜택</h1>
+          </li>
+          <li><a href="javascript:void(0)">CGV 할인정보</a></li>
+          <li><a href="javascript:void(0)">CLUB 서비스</a></li>
+          <li><a href="javascript:void(0)">VIP 라운지</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  </header>
   <section>
-    <div class="section">
+    <div class="video-section">
+      <div class="inner">
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/Ha6Ec203B2I?autoplay=1&mute=1&controls=0&loop=1&playlist=Ha6Ec203B2I"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="video-cover">
+            <div class="movie-content">
+              <h1>극장판 엄마까투리</h1>
+              <p>
+                난생처음 숲을 떠난<br>
+                까투리 가족의 위대한 여정이 시작된다!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="movie-chart-area">
+    <div class="inner">
+      <div class="movie-chart">
+        
+      </div>
     </div>
   </section>
 </body>
