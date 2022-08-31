@@ -10,7 +10,10 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./scss/main.scss" />
-  <script defer src="./ts/main.ts"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/swiper.js"></script>
 </head>
 
 <body>
@@ -174,8 +177,88 @@
 
   <section class="movie-chart-area">
     <div class="inner">
-      <div class="movie-chart">
-        
+      <div class="movie-inpormation">
+        <div class="movie-chart">무비차트</div>
+        <div class="line"></div>
+        <div class="movie-expected">상영예정작</div>
+        <button>전체보기 ></button>
+      </div>
+      <div class="movie-chart-menu">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="movie">
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+              </div>
+
+              <div class="movie-content">
+                <div class="title">
+                  <div class="name">탑건-매버릭</div>
+                </div>
+                <div class="title">
+                  <div class="name">공조2-인터내셔날</div>
+                </div>
+                <div class="title">
+                  <div class="name">육사오</div>
+                </div>
+                <div class="title">
+                  <div class="name">알라딘</div>
+                </div>
+                <div class="title">
+                  <div class="name">헌트</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="movie2">
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+                <div class="movie-image"></div>
+              </div>
+
+              <div class="movie-content">
+                <div class="title">
+                  <div class="name">명탐정 코난-할로윈</div>
+                </div>
+                <div class="title">
+                  <div class="name">시맨틱 에러-더 무비</div>
+                </div>
+                <div class="title">
+                  <div class="name">리미트</div>
+                </div>
+                <div class="title">
+                  <div class="name">인생은 뷰티풀</div>
+                </div>
+                <div class="title">
+                  <div class="name">한산-용의 출현</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-prev">
+          <div class="material-symbols-outlined">
+            arrow_back_ios
+          </div>
+        </div>
+        <div class="swiper-next">
+          <div class="material-symbols-outlined">
+            arrow_forward_ios
+          </div>
+        </div>
       </div>
     </div>
   </section>
