@@ -1,4 +1,7 @@
+@import "./common.scss";
 $url: "../images/";
+
+
 
 .movie-chart-area {
   background-color: #f6f5ef;
@@ -13,25 +16,32 @@ $url: "../images/";
       display: flex;
 
       .movie-chart {
+        cursor: pointer;
         font-weight: bold;
         font-size: 25px;
         border-right: 1px solid #666;
         padding-right: 15px;
+        color: #666;
+
+        &.active {
+          color: #000;
+        }
       }
 
       .movie-expected {
+        cursor: pointer;
         font-weight: bold;
         font-size: 25px;
-        color: #666;
         padding-left: 15px;
+        color: #666;
+
+        &.active {
+          color: #000;
+        }
       }
 
       button {
-        position: absolute;
-        right: 0;
-        padding: 4px;
-        border: 1px solid #666;
-        border-radius: 10px;
+        @include view-all;
       }
     }
 
@@ -40,12 +50,11 @@ $url: "../images/";
 
       .swiper {
         // position: absolute;
-          width: 100%;
+        width: 100%;
 
         height: 320px;
 
         .swiper-wrapper {
-
           .swiper-slide {
             display: block;
 
@@ -68,11 +77,13 @@ $url: "../images/";
                 background-repeat: no-repeat;
                 background-size: cover;
                 border-radius: 10px;
+
                 .cover-hidden {
                   position: absolute;
                   border-radius: 10px;
                   width: 100%;
                   height: 100%;
+
                   button {
                     cursor: pointer;
                     border-radius: 10px;
@@ -87,11 +98,13 @@ $url: "../images/";
                     font-size: 13px;
                     font-weight: bold;
                   }
+
                   .info {
                     border: 1px solid #fff;
                     color: #666;
                     top: 80px;
                   }
+
                   .ticketing {
                     border: 1px solid #fb4357;
                     background-color: #fb4357;
@@ -99,11 +112,13 @@ $url: "../images/";
                     top: 120px;
                   }
                 }
+
                 &:hover {
-                  .cover-hidden{
+                  .cover-hidden {
                     background-color: #000;
                     opacity: .8;
                   }
+
                   button {
                     visibility: visible;
                   }
@@ -112,40 +127,53 @@ $url: "../images/";
             }
 
             @for $i from 1 through 5 {
-              .movie .movie-image:nth-child(#{$i}) {
+              .movie.chart-images .movie-image:nth-child(#{$i}) {
                 background-image: url("#{$url}/movie#{$i}.jpg");
+              }
+
+              .movie.expect-images .movie-image:nth-child(#{$i}) {
+                background-image: url("#{$url}/expect#{$i}.jpg");
               }
             }
 
             @for $i from 1 through 5 {
-              .movie2 .movie-image:nth-child(#{$i}) {
+              .movie2.chart-images .movie-image:nth-child(#{$i}) {
                 background-image: url("#{$url}/movie#{$i+5}.jpg");
+              }
+
+              .movie2.expect-images .movie-image:nth-child(#{$i}) {
+                background-image: url("#{$url}/expect#{$i+5}.jpg");
               }
             }
 
-            .movie-content {
-              position: absolute;
-              display: flex;
-              width: 95%;
-              bottom: 0;
-              right: 0;
-              left: 0;
-              margin: auto;
-              justify-content: space-between;
-              text-align: center;
+            .chart-content,
+            .expected-content {
+              display: none;
 
-              .title {
-                .name {
-                  width: 180px;
-                  font-size: 18px;
-                  font-weight: bold;
+              &.visible {
+                position: absolute;
+                display: flex;
+                width: 95%;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                justify-content: space-between;
+                text-align: center;
+
+                .title {
+                  .name {
+                    width: 180px;
+                    font-size: 18px;
+                    font-weight: bold;
+                  }
                 }
               }
             }
           }
         }
-        
       }
+
       .swiper-prev,
       .swiper-next {
         z-index: 1;
@@ -161,6 +189,7 @@ $url: "../images/";
         opacity: .8;
         cursor: pointer;
       }
+
       .swiper-next {
         right: 0;
       }
