@@ -44,13 +44,14 @@
           padding-left: 10px;
 
           .hashtag {
+            padding: 5px;
             position: absolute;
             right: 20px;
             border: 1px solid #f6f6f6f6;
             border-radius: 10px;
-            background-color: #f6f6f6f6;
+            background-color: #f0f0f0;
             color: #666;
-            font-size: 15px;
+            font-size: 10px;
             font-weight: bold;
           }
           &:nth-last-child(1) {

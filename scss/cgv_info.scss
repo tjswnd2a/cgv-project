@@ -1,13 +1,131 @@
 @import "./common.scss";
 
+@mixin title-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
 .cgv-info {
+  margin-top: 50px;
+
   .inner {
-    background-color: orange;
     display: flex;
+
     .info {
       display: flex;
+
       .cgv-guide {
         display: flex;
+        border: 1px solid #666;
+        border-radius: 15px;
+
+        .service {
+          padding: 20px 10px 20px 10px;
+
+          .notice {
+            width: 450px;
+            position: relative;
+            display: flex;
+
+            .title {
+              @include title-name;
+              padding: 0 20px 0 20px;
+            }
+
+            .content {
+              font-size: 14px;
+              padding-right: 10px;
+            }
+
+            button {
+              @include view-all;
+              top: -5px;
+              margin: auto;
+            }
+          }
+
+          .line {
+            width: 90%;
+            height: .5px;
+            background-color: #666;
+            margin: 0 auto;
+            margin-top: 20px;
+          }
+
+          .client {
+            padding: 20px 10px 20px 10px;
+
+            display: flex;
+
+            .title {
+              @include title-name;
+              padding: 3px 20px 0 10px;
+            }
+
+            .content {
+              font-size: 14px;
+
+              .phone-number {
+                font-size: 1rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+              }
+            }
+          }
+
+          .QnA {
+            padding: 20px 10px 0 20px;
+
+            button {
+              padding: 10px;
+              border-radius: 10px;
+              font-weight: bold;
+              border: none;
+            }
+
+            .individual {
+              margin: 0 10px 0 10px;
+            }
+          }
+        }
+
+        .app {
+          width: 230px;
+          border-left: .5px solid #666;
+          padding: 0 20px;
+          text-align: center;
+          .app-download {
+              padding-top: 20px;
+              font-size: 18px;
+              font-weight: bold;
+          }
+          .app-content {
+            padding: 10px 0;
+            font-size: 14px;
+          }
+          img {
+            padding: 10px;
+          }
+          .qr-content {
+            font-size: 14px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+
+    }
+    .swiper {
+      width: 259px;
+      height: 260px;
+      margin: auto 0;
+      margin-left: 40px;
+      .swiper-wrapper {
+        .swiper-slide {
+          img {
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
