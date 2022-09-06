@@ -50,8 +50,6 @@ export function autoplay_controller(auto) {
 
 var card_swiper = new Swiper('.cgv-info .swiper', {
   // Optional parameters
-  loop: true,
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
