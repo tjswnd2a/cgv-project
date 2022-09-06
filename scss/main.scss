@@ -1,5 +1,103 @@
 @import "./common.scss";
 
+
+.fix-menu {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  background-image: linear-gradient(to right, #fb4357, #ef5500);
+
+  .inner {
+    position: relative;
+    display: flex;
+    text-align: center;
+    height: 70px;
+    align-items: center;
+
+    img {
+      width: 70px;
+      height: 32px;
+    }
+
+    .menu {
+      display: flex;
+
+      li {
+        padding: 0 20px;
+
+        a {
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .search {
+      position: absolute;
+      display: flex;
+      right: 0;
+      text-align: center;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+
+      input {
+        margin-left: 10px;
+        background-color: transparent;
+        border: none;
+        padding: 2px;
+
+      }
+
+      .material-symbols-outlined {
+        padding: 0 10px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn-badge {
+  position: fixed;
+  display: flex;
+  bottom: 10%;
+  right: 0;
+  z-index: 999;
+  opacity: 0;
+
+  .ticketing {
+    cursor: pointer;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #fb4357, #ef5500);
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+  .btn-top {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color:#666;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 30px;
+    .material-symbols-outlined{
+      font-size: 30px;
+    }
+  }
+}
+
 header {
   .inner {
     height: 100px;
@@ -9,7 +107,7 @@ header {
   .cgv-logo {
     position: absolute;
     display: flex;
-    width: 220px;
+    width: 300px;
     height: 53px;
     top: 0;
     bottom: 0;
@@ -25,6 +123,7 @@ header {
       position: absolute;
       right: 0;
       bottom: 0;
+      font-size: 18px;
     }
   }
 
@@ -120,10 +219,11 @@ header {
     width: 100%;
     height: 0;
     overflow: hidden;
-    z-index: 1;
+    z-index: 999;
     border-bottom: 1px solid #a58e8e;
     background-color: #fff;
-    transition: 0.3s;
+    // transition: 0.3s;
+    top: 158px;
 
     .inner {
       height: 0;
@@ -141,6 +241,7 @@ header {
         transition: 0.4s;
 
         .menu {
+          cursor: pointer;
           margin-top: 15px;
           text-align: left;
           height: 80%;
@@ -166,6 +267,7 @@ header {
               }
             }
           }
+
           &:first-child {
             border-left: none;
           }

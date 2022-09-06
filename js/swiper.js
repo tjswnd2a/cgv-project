@@ -1,6 +1,6 @@
 // movie
 
-var movie_swiper = new Swiper('.movie-chart-area .swiper', {
+let movie_swiper = new Swiper('.movie-chart-area .swiper', {
   navigation: {
     nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
@@ -13,7 +13,7 @@ export function swiper_init(){
 
 // event
 
-var event_swiper = new Swiper('.event-area .swiper', {
+let event_swiper = new Swiper('.event-area .swiper', {
   // Optional parameters
   // loop: true,
   autoplay: {
@@ -48,7 +48,7 @@ export function autoplay_controller(auto) {
   }
 }
 
-var card_swiper = new Swiper('.cgv-info .swiper', {
+let card_swiper = new Swiper('.cgv-info .swiper', {
   // Optional parameters
   // If we need pagination
   pagination: {

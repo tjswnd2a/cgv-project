@@ -19,17 +19,45 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- js -->
   <script defer src="./js/main.js"></script>
   <script defer src="./js/movie.js"></script>
   <script defer src="./js/swiper.js"></script>
   <script defer src="./js/event.js"></script>
+  <script defer src="./js/special_hall.js"></script>
   <!-- js -->
 
 </head>
 
 <body>
+
+  <div class="fix-menu">
+    <div class="inner">
+      <img src="./images/logoWhite.png" alt="" />
+      <ul class="menu">
+        <li><a href="javascript:void(0)">영화</a></li>
+        <li><a href="javascript:void(0)">극장</a></li>
+        <li><a href="javascript:void(0)">예매</a></li>
+        <li><a href="javascript:void(0)">스토어</a></li>
+        <li><a href="javascript:void(0)">이벤트</a></li>
+        <li><a href="javascript:void(0)">혜택</a></li>
+      </ul>
+      <div class="search">
+        <input type="text">
+        <div class="material-symbols-outlined">search</div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-badge">
+    <div class="ticketing">예매하기</div>
+    <div class="btn-top">
+      <span class="material-symbols-outlined">
+        arrow_upward
+        </span>
+    </div>
+  </div>
+
   <header>
     <div class="inner">
 
@@ -38,7 +66,7 @@
           <img src="./images/logoRed.png" alt="cgv 로고 이미지" />
         </div>
         <div class="cultureplex">
-          CULTUREPLEX
+          C U L T U R E P L E X
         </div>
       </div>
 
@@ -65,6 +93,7 @@
       </div>
 
     </div>
+
 
     <div class="cgv-menu-bar">
       <div class="inner">
@@ -484,32 +513,32 @@
 
       <div class="special-info">
         <div class="hall-image">
-          <img src="./images/16390080561620.png" alt="">
-          <img src="./images/16553622935690.png" alt="">
-          <img src="./images/16382612660240.png" alt="">
-          <img src="./images/16382612660560.png" alt="">
+          <img class="hall view" src="./images/16390080561620.png" alt="">
+          <img class="hall" src="./images/16553622935690.png" alt="">
+          <img class="hall" src="./images/16382612660240.png" alt="">
+          <img class="hall" src="./images/16382612660560.png" alt="">
         </div>
         <div class="hall-title">
           <ul>
-            <li class="item-name">
+            <li class="item-CINEMA focus">
               <h1>SUITE CINEMA</h1>
               <div class="hashtag">
                 <p>#호텔 컨셉의 프리미엄관</p>
               </div>
             </li>
-            <li class="item-name">
+            <li class="item-LIVINGROOM">
               <h1>CINE & LIVINGROOM</h1>
               <div class="hashtag">
                 <p>#신개념 소셜 상영관</p>
               </div>
             </li>
-            <li class="item-name">
+            <li class="item-4DX">
               <h1>4DX</h1>
               <div class="hashtag">
                 <p>#모션시트 #오감체험</p>
               </div>
             </li>
-            <li class="item-name">
+            <li class="item-CHEF">
               <h1>CINE de CHEF</h1>
               <div class="hashtag">
                 <p>#쉐프가 있는 영화관</p>
@@ -577,7 +606,7 @@
             </div>
           </div>
         </div>
-          
+
       </div>
     </div>
   </section>
