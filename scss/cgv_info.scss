@@ -1,0 +1,14 @@
+@import "./common.scss";
+
+.cgv-info {
+  .inner {
+    background-color: orange;
+    display: flex;
+    .info {
+      display: flex;
+      .cgv-guide {
+        display: flex;
+      }
+    }
+  }
+}

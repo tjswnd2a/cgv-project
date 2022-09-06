@@ -1,0 +1,69 @@
+@import "./common.scss";
+
+.special-hall {
+  .inner {
+    .special-title {
+      position: relative;
+      padding: 30px 0 20px 0;
+      display: flex;
+
+      .title {
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      button {
+        @include view-all;
+      }
+    }
+
+    .special-info {
+      width: 100%;
+      height: 270px;
+
+      img {
+        position: absolute;
+        width: 500px;
+        height: 270px;
+      }
+    }
+
+    .hall-title {
+      position: absolute;
+      width: 45%;
+      height: 100%;
+      right: 0;
+
+      ul {
+        .item-name {
+          border-top: 1px solid #666;
+          display: flex;
+          height: calc(260px / 4);
+          align-items: center;
+          font-size: 20px;
+          padding-left: 10px;
+
+          .hashtag {
+            position: absolute;
+            right: 20px;
+            border: 1px solid #f6f6f6f6;
+            border-radius: 10px;
+            background-color: #f6f6f6f6;
+            color: #666;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          &:nth-last-child(1) {
+            border-bottom: 1px solid #666;
+          }
+          &.focus {
+            border: 3px solid #000;
+            border-radius: 10px;
+            font-weight: bold;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
