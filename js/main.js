@@ -39,7 +39,7 @@ window.addEventListener("scroll", throttle(function () {
 
     gsap.to(menu_hiddenEl, 0, {
       position: "absolute",
-      top: "158px",
+      top: "156px",
       transition: "0"
     })
 
