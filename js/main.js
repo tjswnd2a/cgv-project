@@ -73,11 +73,18 @@ fix_menu_item.addEventListener("mouseover", function (evnet) {
           menu_hiddenEl.classList.remove("visible");
         }
       })
+    }else {
+      menu_active = true;
     }
   }))
   menu_hiddenEl.classList.add("visible");
 })
 
+// fix_menu_item.addEventListener("mouseout", function (evnet) {
+//   if (menu_active === false) {
+//     menu_hiddenEl.classList.remove("visible");
+//   }
+// })
 
 badge_BtnTop.addEventListener("click", function(){
   window.scrollTo({top: 0, left: 0, behavior:'smooth'}); // x좌표, y좌표
